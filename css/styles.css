@@ -59,3 +59,13 @@ img {
     background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
     color: #FFFFA0;
   }
+
+  .loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    background: black;
+    opacity: 1;
+    transition: opacity 1s;
+  }
