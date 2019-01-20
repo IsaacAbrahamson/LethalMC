@@ -3,6 +3,7 @@ html, body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -18,8 +19,9 @@ main {
 }
 
 img {
-  display: block;
-  margin-bottom: 20px;
+  display: block;  
+  max-width: 100%;
+  height: auto;
 }
 
 h3, ul, p {
@@ -41,7 +43,7 @@ strong {
 
 
 #header {
-  margin: 6vh 0;  
+  margin: 12vh 0;  
 }
 
 #info {
@@ -54,4 +56,18 @@ strong {
 
 #info .container {  
   margin: 5vh 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    margin: 5vh 3vw;  
+  }
+
+  #info {
+    background: white;
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 12px 0 15px 10px white, -12px 0 15px 10px white;
+  }
 }
