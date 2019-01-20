@@ -1,5 +1,7 @@
 html {
     background: url(../bg-min.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -8,11 +10,18 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+#info {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -20,6 +29,10 @@ img {
     src: url('../mcfont.eot');
     src: url('../mcfont.woff') format('woff'),
          url('../mcfont.ttf')  format('truetype');
+  }
+
+  strong {
+    color: #ffea9e;
   }
   
   .button {
